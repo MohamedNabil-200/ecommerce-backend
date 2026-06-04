@@ -101,6 +101,14 @@ CREATE INDEX "wishlist_userId_idx" ON "wishlist"("userId");
 CREATE INDEX "wishlist_productId_idx" ON "wishlist"("productId");
 
 -- CreateIndex
+CREATE INDEX "order_items_orderId_idx"
+ON "order_items"("orderId");
+
+-- CreateIndex
+CREATE INDEX "order_items_productId_idx"
+ON "order_items"("productId");
+
+-- CreateIndex
 CREATE UNIQUE INDEX "wishlist_userId_productId_key" ON "wishlist"("userId", "productId");
 
 -- CreateIndex

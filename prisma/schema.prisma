@@ -136,5 +136,9 @@ model OrderItem{
   order       Order         @relation(fields: [orderId], references: [id])
   product     Product       @relation(fields: [productId], references: [id])
 
+  @@index([orderId])
+  @@index([productId])
+
+
   @@map("order_items")
 }
