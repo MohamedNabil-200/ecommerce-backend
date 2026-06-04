@@ -1,6 +1,9 @@
 {
   "name": "ecommerce-back",
   "version": "1.0.0",
+  "engines": {
+    "node": "^20.19 || ^22.12 || >=24.0"
+  },
   "main": "index.js",
   "scripts": {
     "dev": "ts-node-dev --respawn src/server.ts",
