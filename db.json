@@ -1,0 +1,629 @@
+{
+  "users": [
+    {
+      "email": "mohamed@gmail.com",
+      "password": "$2a$10$Oe9au8qoXzgWXrSxln8KHOPbNpmqyTmK7THhD1aSTWjEuTo5wrTVa",
+      "firstName": "mohamed",
+      "lastName": "nabil",
+      "id": 1
+    },
+    {
+      "email": "omar@gmail.com",
+      "password": "$2a$10$yqYENjCqKtsoOxdOwmFWo.aUh6y6fXb.bZSKDhN4D5BXUeP5KI4rm",
+      "firstName": "omar",
+      "lastName": "nabil",
+      "id": 2
+    },
+    {
+      "email": "ahmed@gmail.com",
+      "password": "$2a$10$KqV3e.ODN/IgX4RnSDs5Vu85ER8gdpg5XKtqWNSSmpynjh63oKcQW",
+      "firstName": "ahmed",
+      "lastName": "nabil",
+      "id": 3
+    }
+  ],
+  "categories": [
+    {
+      "id": 1,
+      "title": "clothes",
+      "prefix": "clothes",
+      "img": "https://i.imgur.com/QkIa5tT.jpeg"
+    },
+    {
+      "id": 2,
+      "title": "electronics",
+      "prefix": "electronics",
+      "img": "https://i.imgur.com/ZANVnHE.jpeg"
+    },
+    {
+      "id": 3,
+      "title": "furniture",
+      "prefix": "furniture",
+      "img": "https://i.imgur.com/Qphac99.jpeg"
+    },
+    {
+      "id": 4,
+      "title": "shoes",
+      "prefix": "shoes",
+      "img": "https://i.imgur.com/qNOjJje.jpeg"
+    },
+    {
+      "id": 5,
+      "title": "miscellaneous",
+      "prefix": "miscellaneous",
+      "img": "https://i.imgur.com/BG8J0Fj.jpg"
+    }
+  ],
+  "products": [
+    {
+      "id": 1,
+      "title": "Classic Heather Gray Hoodie",
+      "price": 6900,
+      "cat_prefix": "clothes",
+      "img": "https://i.imgur.com/cHddUCu.jpeg",
+      "max": 4
+    },
+    {
+      "id": 2,
+      "title": "Classic Grey Hooded Sweatshirt",
+      "price": 90,
+      "cat_prefix": "clothes",
+      "img": "https://i.imgur.com/R2PN9Wq.jpeg",
+      "max": 3
+    },
+    {
+      "id": 3,
+      "title": "Classic Black Hooded Sweatshirt",
+      "price": 79,
+      "cat_prefix": "clothes",
+      "img": "https://i.imgur.com/cSytoSD.jpeg",
+      "max": 4
+    },
+    {
+      "id": 4,
+      "title": "Classic Comfort Fit Joggers",
+      "price": 25,
+      "cat_prefix": "clothes",
+      "img": "https://i.imgur.com/ZKGofuB.jpeg",
+      "max": 2
+    },
+    {
+      "id": 5,
+      "title": "Classic Comfort Drawstring Joggers",
+      "price": 79,
+      "cat_prefix": "clothes",
+      "img": "https://i.imgur.com/mp3rUty.jpeg",
+      "max": 4
+    },
+    {
+      "id": 6,
+      "title": "Classic Red Jogger Sweatpants",
+      "price": 98,
+      "cat_prefix": "clothes",
+      "img": "https://i.imgur.com/9LFjwpI.jpeg",
+      "max": 3
+    },
+    {
+      "id": 7,
+      "title": "Classic Navy Blue Baseball Cap",
+      "price": 61,
+      "cat_prefix": "clothes",
+      "img": "https://i.imgur.com/R3iobJA.jpeg",
+      "max": 2
+    },
+    {
+      "id": 8,
+      "title": "Blue Cap",
+      "price": 100,
+      "cat_prefix": "clothes",
+      "img": "https://i.imgur.com/wXuQ7bm.jpeg",
+      "max": 4
+    },
+    {
+      "id": 9,
+      "title": "Classic Red Baseball Cap",
+      "price": 35,
+      "cat_prefix": "clothes",
+      "img": "https://i.imgur.com/cBuLvBi.jpeg",
+      "max": 3
+    },
+    {
+      "id": 10,
+      "title": "Classic Black Baseball Cap",
+      "price": 58,
+      "cat_prefix": "clothes",
+      "img": "https://i.imgur.com/KeqG6r4.jpeg",
+      "max": 2
+    },
+    {
+      "id": 11,
+      "title": "Classic Olive Chino Shorts",
+      "price": 84,
+      "cat_prefix": "clothes",
+      "img": "https://i.imgur.com/UsFIvYs.jpeg",
+      "max": 4
+    },
+    {
+      "id": 12,
+      "title": "Classic High-Waisted Athletic Shorts",
+      "price": 43,
+      "cat_prefix": "clothes",
+      "img": "https://i.imgur.com/eGOUveI.jpeg",
+      "max": 3
+    },
+    {
+      "id": 13,
+      "title": "Classic White Crew Neck T-Shirt",
+      "price": 39,
+      "cat_prefix": "clothes",
+      "img": "https://i.imgur.com/axsyGpD.jpeg",
+      "max": 2
+    },
+    {
+      "id": 14,
+      "title": "Classic White Tee - Timeless Style and Comfort",
+      "price": 73,
+      "cat_prefix": "clothes",
+      "img": "https://i.imgur.com/Y54Bt8J.jpeg",
+      "max": 4
+    },
+    {
+      "id": 15,
+      "title": "Classic Black T-Shirt",
+      "price": 35,
+      "cat_prefix": "clothes",
+      "img": "https://i.imgur.com/9DqEOV5.jpeg",
+      "max": 3
+    },
+    {
+      "id": 16,
+      "title": "Sleek White & Orange Wireless Gaming Controller",
+      "price": 69,
+      "cat_prefix": "electronics",
+      "img": "https://i.imgur.com/ZANVnHE.jpeg",
+      "max": 2
+    },
+    {
+      "id": 17,
+      "title": "Sleek Wireless Headphone & Inked Earbud Set",
+      "price": 44,
+      "cat_prefix": "electronics",
+      "img": "https://i.imgur.com/yVeIeDa.jpeg",
+      "max": 4
+    },
+    {
+      "id": 18,
+      "title": "Sleek Comfort-Fit Over-Ear Headphones",
+      "price": 28,
+      "cat_prefix": "electronics",
+      "img": "https://i.imgur.com/SolkFEB.jpeg",
+      "max": 3
+    },
+    {
+      "id": 19,
+      "title": "Efficient 2-Slice Toaster",
+      "price": 48,
+      "cat_prefix": "electronics",
+      "img": "https://i.imgur.com/keVCVIa.jpeg",
+      "max": 2
+    },
+    {
+      "id": 20,
+      "title": "Sleek Wireless Computer Mouse",
+      "price": 10,
+      "cat_prefix": "electronics",
+      "img": "https://i.imgur.com/w3Y8NwQ.jpeg",
+      "max": 4
+    },
+    {
+      "id": 21,
+      "title": "Sleek Modern Laptop with Ambient Lighting",
+      "price": 43,
+      "cat_prefix": "electronics",
+      "img": "https://i.imgur.com/OKn1KFI.jpeg",
+      "max": 3
+    },
+    {
+      "id": 22,
+      "title": "Sleek Modern Laptop for Professionals",
+      "price": 97,
+      "cat_prefix": "electronics",
+      "img": "https://i.imgur.com/ItHcq7o.jpeg",
+      "max": 2
+    },
+    {
+      "id": 23,
+      "title": "Stylish Red & Silver Over-Ear Headphones",
+      "price": 39,
+      "cat_prefix": "electronics",
+      "img": "https://i.imgur.com/YaSqa06.jpeg",
+      "max": 4
+    },
+    {
+      "id": 24,
+      "title": "Sleek Mirror Finish Phone Case",
+      "price": 27,
+      "cat_prefix": "electronics",
+      "img": "https://i.imgur.com/yb9UQKL.jpeg",
+      "max": 3
+    },
+    {
+      "id": 25,
+      "title": "Sleek Smartwatch with Vibrant Display",
+      "price": 16,
+      "cat_prefix": "electronics",
+      "img": "https://i.imgur.com/LGk9Jn2.jpeg",
+      "max": 2
+    },
+    {
+      "id": 26,
+      "title": "Sleek Modern Leather Sofa",
+      "price": 53,
+      "cat_prefix": "furniture",
+      "img": "https://i.imgur.com/Qphac99.jpeg",
+      "max": 4
+    },
+    {
+      "id": 27,
+      "title": "Mid-Century Modern Wooden Dining Table",
+      "price": 24,
+      "cat_prefix": "furniture",
+      "img": "https://i.imgur.com/DMQHGA0.jpeg",
+      "max": 3
+    },
+    {
+      "id": 28,
+      "title": "Elegant Golden-Base Stone Top Dining Table",
+      "price": 66,
+      "cat_prefix": "furniture",
+      "img": "https://i.imgur.com/NWIJKUj.jpeg",
+      "max": 2
+    },
+    {
+      "id": 29,
+      "title": "Modern Elegance Teal Armchair",
+      "price": 25,
+      "cat_prefix": "furniture",
+      "img": "https://i.imgur.com/6wkyyIN.jpeg",
+      "max": 4
+    },
+    {
+      "id": 30,
+      "title": "Elegant Solid Wood Dining Table",
+      "price": 67,
+      "cat_prefix": "furniture",
+      "img": "https://i.imgur.com/4lTaHfF.jpeg",
+      "max": 3
+    },
+    {
+      "id": 31,
+      "title": "Modern Minimalist Workstation Setup",
+      "price": 49,
+      "cat_prefix": "furniture",
+      "img": "https://i.imgur.com/3oXNBst.jpeg",
+      "max": 2
+    },
+    {
+      "id": 32,
+      "title": "Modern Ergonomic Office Chair",
+      "price": 71,
+      "cat_prefix": "furniture",
+      "img": "https://i.imgur.com/3dU0m72.jpeg",
+      "max": 4
+    },
+    {
+      "id": 33,
+      "title": "Futuristic Holographic Soccer Cleats",
+      "price": 39,
+      "cat_prefix": "shoes",
+      "img": "https://i.imgur.com/qNOjJje.jpeg",
+      "max": 3
+    },
+    {
+      "id": 34,
+      "title": "Rainbow Glitter High Heels",
+      "price": 39,
+      "cat_prefix": "shoes",
+      "img": "https://i.imgur.com/62gGzeF.jpeg",
+      "max": 2
+    },
+    {
+      "id": 35,
+      "title": "Chic Summer Denim Espadrille Sandals",
+      "price": 33,
+      "cat_prefix": "shoes",
+      "img": "https://i.imgur.com/9qrmE1b.jpeg",
+      "max": 4
+    },
+    {
+      "id": 36,
+      "title": "Vibrant Runners: Bold Orange & Blue Sneakers",
+      "price": 27,
+      "cat_prefix": "shoes",
+      "img": "https://i.imgur.com/hKcMNJs.jpeg",
+      "max": 3
+    },
+    {
+      "id": 37,
+      "title": "Vibrant Pink Classic Sneakers",
+      "price": 84,
+      "cat_prefix": "shoes",
+      "img": "https://i.imgur.com/mcW42Gi.jpeg",
+      "max": 2
+    },
+    {
+      "id": 38,
+      "title": "Futuristic Silver and Gold High-Top Sneaker",
+      "price": 68,
+      "cat_prefix": "shoes",
+      "img": "https://i.imgur.com/npLfCGq.jpeg",
+      "max": 4
+    },
+    {
+      "id": 39,
+      "title": "Futuristic Chic High-Heel Boots",
+      "price": 36,
+      "cat_prefix": "shoes",
+      "img": "https://i.imgur.com/HqYqLnW.jpeg",
+      "max": 3
+    },
+    {
+      "id": 40,
+      "title": "Elegant Patent Leather Peep-Toe Pumps with Gold-Tone Heel",
+      "price": 53,
+      "cat_prefix": "shoes",
+      "img": "https://i.imgur.com/AzAY4Ed.jpeg",
+      "max": 2
+    },
+    {
+      "id": 41,
+      "title": "Elegant Purple Leather Loafers",
+      "price": 17,
+      "cat_prefix": "shoes",
+      "img": "https://i.imgur.com/Au8J9sX.jpeg",
+      "max": 4
+    },
+    {
+      "id": 42,
+      "title": "Classic Blue Suede Casual Shoes",
+      "price": 39,
+      "cat_prefix": "shoes",
+      "img": "https://i.imgur.com/sC0ztOB.jpeg",
+      "max": 3
+    },
+    {
+      "id": 43,
+      "title": "Sleek Futuristic Electric Bicycle",
+      "price": 22,
+      "cat_prefix": "miscellaneous",
+      "img": "https://i.imgur.com/BG8J0Fj.jpg",
+      "max": 2
+    },
+    {
+      "id": 44,
+      "title": "Sleek All-Terrain Go-Kart",
+      "price": 37,
+      "cat_prefix": "miscellaneous",
+      "img": "https://i.imgur.com/Ex5x3IU.jpg",
+      "max": 4
+    },
+    {
+      "id": 45,
+      "title": "Radiant Citrus Eau de Parfum",
+      "price": 73,
+      "cat_prefix": "miscellaneous",
+      "img": "https://i.imgur.com/xPDwUb3.jpg",
+      "max": 3
+    },
+    {
+      "id": 46,
+      "title": "Sleek Olive Green Hardshell Carry-On Luggage",
+      "price": 48,
+      "cat_prefix": "miscellaneous",
+      "img": "https://i.imgur.com/jVfoZnP.jpg",
+      "max": 2
+    },
+    {
+      "id": 47,
+      "title": "Chic Transparent Fashion Handbag",
+      "price": 61,
+      "cat_prefix": "miscellaneous",
+      "img": "https://i.imgur.com/Lqaqz59.jpg",
+      "max": 4
+    },
+    {
+      "id": 48,
+      "title": "Trendy Pink-Tinted Sunglasses",
+      "price": 38,
+      "cat_prefix": "miscellaneous",
+      "img": "https://i.imgur.com/0qQBkxX.jpg",
+      "max": 3
+    },
+    {
+      "id": 49,
+      "title": "Elegant Glass Tumbler Set",
+      "price": 50,
+      "cat_prefix": "miscellaneous",
+      "img": "https://i.imgur.com/TF0pXdL.jpg",
+      "max": 2
+    },
+    {
+      "id": 54,
+      "title": "Camera",
+      "price": 1000,
+      "cat_prefix": "electronics",
+      "img": "https://images.pexels.com/photos/51383/photo-camera-subject-photographer-51383.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "max": 1
+    }
+  ],
+  "wishlist": [
+    {
+      "userId": 3,
+      "productId": 31,
+      "id": 1
+    },
+    {
+      "userId": 3,
+      "productId": 32,
+      "id": 2
+    },
+    {
+      "userId": 3,
+      "productId": 1,
+      "id": 3
+    },
+    {
+      "userId": 3,
+      "productId": 17,
+      "id": 4
+    },
+    {
+      "userId": 2,
+      "productId": 7,
+      "id": 5
+    },
+    {
+      "userId": 2,
+      "productId": 16,
+      "id": 6
+    },
+    {
+      "userId": 2,
+      "productId": 17,
+      "id": 7
+    },
+    {
+      "userId": 1,
+      "productId": 1,
+      "id": 8
+    },
+    {
+      "userId": 1,
+      "productId": 2,
+      "id": 9
+    },
+    {
+      "userId": 1,
+      "productId": 3,
+      "id": 10
+    },
+    {
+      "userId": 1,
+      "productId": 43,
+      "id": 11
+    },
+    {
+      "userId": 1,
+      "productId": 44,
+      "id": 12
+    },
+    {
+      "userId": 1,
+      "productId": 17,
+      "id": 13
+    },
+    {
+      "userId": 1,
+      "productId": 16,
+      "id": 14
+    },
+    {
+      "userId": 1,
+      "productId": 18,
+      "id": 15
+    }
+  ],
+  "orders": [
+    {
+      "userId": 1,
+      "items": [
+        {
+          "id": 2,
+          "title": "Classic Grey Hooded Sweatshirt",
+          "price": 90,
+          "img": "https://i.imgur.com/R2PN9Wq.jpeg",
+          "quantity": 1
+        },
+        {
+          "id": 3,
+          "title": "Classic Black Hooded Sweatshirt",
+          "price": 79,
+          "img": "https://i.imgur.com/cSytoSD.jpeg",
+          "quantity": 1
+        },
+        {
+          "id": 43,
+          "title": "Sleek Futuristic Electric Bicycle",
+          "price": 22,
+          "img": "https://i.imgur.com/BG8J0Fj.jpg",
+          "quantity": 2
+        }
+      ],
+      "subtotal": 213,
+      "id": 1
+    },
+    {
+      "userId": 1,
+      "items": [
+        {
+          "id": 27,
+          "title": "Mid-Century Modern Wooden Dining Table",
+          "price": 24,
+          "img": "https://i.imgur.com/DMQHGA0.jpeg",
+          "quantity": 1
+        },
+        {
+          "id": 28,
+          "title": "Elegant Golden-Base Stone Top Dining Table",
+          "price": 66,
+          "img": "https://i.imgur.com/NWIJKUj.jpeg",
+          "quantity": 2
+        }
+      ],
+      "subtotal": 156,
+      "id": 2
+    },
+    {
+      "userId": 1,
+      "items": [
+        {
+          "id": 48,
+          "title": "Trendy Pink-Tinted Sunglasses",
+          "price": 38,
+          "img": "https://i.imgur.com/0qQBkxX.jpg",
+          "quantity": 1
+        },
+        {
+          "id": 49,
+          "title": "Elegant Glass Tumbler Set",
+          "price": 50,
+          "img": "https://i.imgur.com/TF0pXdL.jpg",
+          "quantity": 1
+        }
+      ],
+      "subtotal": 88,
+      "id": 3
+    },
+    {
+      "userId": 1,
+      "items": [
+        {
+          "id": 41,
+          "title": "Elegant Purple Leather Loafers",
+          "price": 17,
+          "img": "https://i.imgur.com/Au8J9sX.jpeg",
+          "quantity": 1
+        },
+        {
+          "id": 42,
+          "title": "Classic Blue Suede Casual Shoes",
+          "price": 39,
+          "img": "https://i.imgur.com/sC0ztOB.jpeg",
+          "quantity": 3
+        }
+      ],
+      "subtotal": 134,
+      "id": 4
+    }
+  ]
+}
