@@ -1,11 +1,24 @@
+#Dependency directories
 node_modules
-dist
+
+#Build output
+dist/
+
+#Environment variables
 .env
 .env.local
 
-coverage
+#Testing
+coverage/
 
+#Logs
+*.log
+
+#Editor
 .vscode
 
+#OS files
 .DS_Store
+
+#Generated Prisma client
 /src/generated/prisma
