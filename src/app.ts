@@ -1,5 +1,7 @@
 import express from "express";
 import cors from "cors";
+import { notFoundMiddleware } from "./middlewares/not-found.middleware"; 
+import { errorMiddleware } from "./middlewares/error.middleware";
 
 const app = express();
 
@@ -12,5 +14,8 @@ app.get("/api/health", (_, res) => {
     message: "Server Running",
   });
 });
+
+app.use(notFoundMiddleware);
+app.use(errorMiddleware);
 
 export default app;
