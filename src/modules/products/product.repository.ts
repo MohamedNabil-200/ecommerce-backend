@@ -4,7 +4,7 @@ const getAll = async () => {
   return prisma.product.findMany();
 };
 
-const getById = (id: number) => {
+const getById = async (id: number) => {
   return prisma.product.findUnique({
     where: { id },
   });

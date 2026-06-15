@@ -1,3 +1,4 @@
+import { AppError } from "../../utils/app-error";
 import { productRepository } from "./product.repository";
 
 const getAll = async () => {
@@ -5,7 +6,13 @@ const getAll = async () => {
 };
 
 const getById = async (id: number) => {
-  return productRepository.getById(id);
+  const product = await productRepository.getById(id);
+
+  if (!product) {
+    throw new AppError("product not found", 404);
+  }
+
+  return product;
 };
 
 export const productService = {
