@@ -1,5 +1,5 @@
 import { prisma } from "../../lib/prisma";
-import { CreateProductInput } from "./product.types";
+import { CreateProductInput, UpdateProductInput } from "./product.types";
 
 const getAll = async () => {
   return prisma.product.findMany();
@@ -15,8 +15,16 @@ const create = async (data: CreateProductInput) => {
   return prisma.product.create({ data });
 };
 
+const update = async (id: number, data: UpdateProductInput) => {
+  return prisma.product.update({
+    where: { id },
+    data,
+  });
+};
+
 export const productRepository = {
   getAll,
   getById,
   create,
+  update,
 };

@@ -8,4 +8,6 @@ router.get("/:id", productController.getById);
 
 router.post("/", productController.create);
 
+router.patch("/:id", productController.update);
+
 export default router;
