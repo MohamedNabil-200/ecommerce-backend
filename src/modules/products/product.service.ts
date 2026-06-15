@@ -1,5 +1,6 @@
 import { AppError } from "../../utils/app-error";
 import { productRepository } from "./product.repository";
+import { CreateProductInput } from "./product.types";
 
 const getAll = async () => {
   return productRepository.getAll();
@@ -15,7 +16,12 @@ const getById = async (id: number) => {
   return product;
 };
 
+const create = async (data: CreateProductInput) => {
+  return productRepository.create(data);
+};
+
 export const productService = {
   getAll,
   getById,
+  create,
 };

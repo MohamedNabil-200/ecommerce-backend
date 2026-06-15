@@ -1,6 +1,7 @@
 import { Request, Response } from "express";
 import { asyncHandler } from "../../utils/async-handler";
 import { productService } from "./product.service";
+import { CreateProductInput } from "./product.types";
 
 const getAll = asyncHandler(async (_req: Request, res: Response) => {
   const products = await productService.getAll();
@@ -22,4 +23,17 @@ const getById = asyncHandler(async (req: Request, res: Response) => {
   });
 });
 
-export const productController = { getAll, getById };
+const create = asyncHandler(
+  async (req: Request, res: Response) => {
+    const data: CreateProductInput = req.body;
+    const createdProduct = await productService.create(data);
+
+    res.status(201).json({
+      success: true,
+      message: "Product created Successfully",
+      data: createdProduct,
+    });
+  },
+);
+
+export const productController = { getAll, getById, create };
