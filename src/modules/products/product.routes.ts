@@ -1,15 +1,39 @@
 import { Router } from "express";
 import { productController } from "./product.controller";
+import {
+  createProductSchema,
+  productParamsSchema,
+  updateProductSchema,
+} from "./product.validation";
+import { validate } from "../../middlewares/validate.middleware";
 
 const router = Router();
 
 router.get("/", productController.getAll);
-router.get("/:id", productController.getById);
+router.get(
+  "/:id",
+  validate({ params: productParamsSchema }),
+  productController.getById,
+);
 
-router.post("/", productController.create);
+router.post(
+  "/",
+  validate({
+    body: createProductSchema,
+  }),
+  productController.create,
+);
 
-router.patch("/:id", productController.update);
+router.patch(
+  "/:id",
+  validate({ params: productParamsSchema, body: updateProductSchema }),
+  productController.update,
+);
 
-router.delete("/:id", productController.remove);
+router.delete(
+  "/:id",
+  validate({ params: productParamsSchema }),
+  productController.remove,
+);
 
 export default router;

@@ -22,9 +22,14 @@ const create = async (data: CreateProductInput) => {
 
 const update = async (id: number, data: UpdateProductInput) => {
   const product = await productRepository.getById(id);
+  const hasAnyField = Object.values(data).some((value) => value !== undefined);
 
   if (!product) {
     throw new AppError("product not found", 404);
+  }
+
+  if (!hasAnyField) {
+    throw new AppError("At least one field is required for update", 400);
   }
 
   return productRepository.update(id, data);
