@@ -33,7 +33,7 @@ const update = async (id: number, data: UpdateCategoryInput) => {
   const category = await categoryRepository.getById(id);
 
   if (!category) {
-    throw new AppError("category Not Found", 404);
+    throw new AppError("Category Not Found", 404);
   }
 
   return categoryRepository.update(id, data);
