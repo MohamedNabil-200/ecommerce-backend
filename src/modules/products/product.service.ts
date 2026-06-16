@@ -1,6 +1,6 @@
 import { AppError } from "../../utils/app-error";
 import { productRepository } from "./product.repository";
-import { CreateProductInput } from "./product.types";
+import { CreateProductInput, UpdateProductInput } from "./product.types";
 
 const getAll = async () => {
   return productRepository.getAll();
@@ -20,8 +20,19 @@ const create = async (data: CreateProductInput) => {
   return productRepository.create(data);
 };
 
+const update = async (id: number, data: UpdateProductInput) => {
+  const product = await productRepository.getById(id);
+
+  if (!product) {
+    throw new AppError("product not found", 404);
+  }
+
+  return productRepository.update(id, data);
+};
+
 export const productService = {
   getAll,
   getById,
   create,
+  update,
 };
