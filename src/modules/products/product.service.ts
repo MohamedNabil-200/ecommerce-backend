@@ -30,9 +30,22 @@ const update = async (id: number, data: UpdateProductInput) => {
   return productRepository.update(id, data);
 };
 
+const remove = async (id: number) => {
+  const product = await productRepository.getById(id);
+
+  if (!product) {
+    throw new AppError("product not found", 404);
+  }
+
+  await productRepository.remove(id);
+
+  return product;
+};
+
 export const productService = {
   getAll,
   getById,
   create,
   update,
+  remove,
 };
