@@ -22,9 +22,16 @@ const update = async (id: number, data: UpdateProductInput) => {
   });
 };
 
+const remove = async (id: number) => {
+  return prisma.product.delete({
+    where: { id },
+  });
+};
+
 export const productRepository = {
   getAll,
   getById,
   create,
   update,
+  remove,
 };

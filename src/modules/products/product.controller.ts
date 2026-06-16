@@ -46,4 +46,15 @@ const update = asyncHandler(async (req: Request, res: Response) => {
   });
 });
 
-export const productController = { getAll, getById, create, update };
+const remove = asyncHandler(async (req: Request, res: Response) => {
+  const id = Number(req.params.id);
+  const deletedProduct = await productService.remove(id);
+
+  res.status(200).json({
+    success: true,
+    message: "Product deleted successfully",
+    data: {id: deletedProduct.id},
+  });
+});
+
+export const productController = { getAll, getById, create, update, remove };
