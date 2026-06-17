@@ -20,6 +20,7 @@ export const validate =
           400,
         );
       }
+      req.body = bodyResult.data as Request["body"]; // Update req.body with the validated data
     }
 
     if (schemas.params) {
@@ -31,6 +32,7 @@ export const validate =
           400,
         );
       }
+      req.params = paramsResult.data as Request["params"]; // Update req.params with the validated data
     }
 
     if (schemas.query) {
@@ -42,6 +44,7 @@ export const validate =
           400,
         );
       }
+      req.query = queryResult.data as Request["query"]; // Update req.query with the validated data
     }
 
     next();

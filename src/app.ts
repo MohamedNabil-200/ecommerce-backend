@@ -4,6 +4,7 @@ import { notFoundMiddleware } from "./middlewares/not-found.middleware";
 import { errorMiddleware } from "./middlewares/error.middleware";
 import  productRoutes  from "./modules/products/product.routes";
 import categoryRouter from "./modules/categories/category.routes";
+import authRoutes from "./modules/auth/auth.routes"
 
 const app = express();
 
@@ -19,6 +20,9 @@ app.get("/api/health", (_, res) => {
 
 app.use("/api/products", productRoutes)
 app.use("/api/categories", categoryRouter)
+
+// Auth
+app.use("/api/auth", authRoutes)
 
 app.use(notFoundMiddleware);
 app.use(errorMiddleware);
