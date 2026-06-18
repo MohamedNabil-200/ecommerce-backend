@@ -23,6 +23,7 @@ app.use("/api/categories", categoryRouter)
 
 // Auth
 app.use("/api/auth", authRoutes)
+app.use("/api/login", authRoutes)
 
 app.use(notFoundMiddleware);
 app.use(errorMiddleware);
