@@ -13,29 +13,25 @@ const addProduct = async (userId: number, productId: number) => {
     throw new AppError("Product Not Found", 404);
   }
 
-  const existingWishlistItem = await wishlistRepository.findByUserAndProduct(
-    userId,
-    productId,
-  );
-
-  if (existingWishlistItem) {
-    throw new AppError("Product already in wishlist", 409);
+  try {
+    return await wishlistRepository.create(userId, productId);
+  } catch (error: any) {
+    if (error.code === "P2002") {
+      throw new AppError("Product already in wishlist", 409);
+    }
+    throw error;
   }
-
-  return wishlistRepository.create(userId, productId);
 };
 
 const removeProduct = async (userId: number, productId: number) => {
-  const wishlistItem = await wishlistRepository.findByUserAndProduct(
-    userId,
-    productId,
-  );
-
-  if (!wishlistItem) {
-    throw new AppError("Wishlist item not found", 404);
+  try {
+    await wishlistRepository.remove(userId, productId);
+  } catch (error: any) {
+    if (error?.code === "P2025") {
+      throw new AppError("Wishlist item not found", 404);
+    }
+    throw error;
   }
-
-  await wishlistRepository.remove(userId, productId);
 
   return { productId };
 };
