@@ -2,9 +2,10 @@ import express from "express";
 import cors from "cors";
 import { notFoundMiddleware } from "./middlewares/not-found.middleware";
 import { errorMiddleware } from "./middlewares/error.middleware";
-import  productRoutes  from "./modules/products/product.routes";
+import productRoutes from "./modules/products/product.routes";
 import categoryRouter from "./modules/categories/category.routes";
-import authRoutes from "./modules/auth/auth.routes"
+import authRoutes from "./modules/auth/auth.routes";
+import userRoutes from "./modules/users/user.routes";
 
 const app = express();
 
@@ -18,11 +19,12 @@ app.get("/api/health", (_, res) => {
   });
 });
 
-app.use("/api/products", productRoutes)
-app.use("/api/categories", categoryRouter)
+app.use("/api/products", productRoutes);
+app.use("/api/categories", categoryRouter);
 
 // Auth
-app.use("/api/auth", authRoutes)
+app.use("/api/auth", authRoutes);
+app.use("/api/users", userRoutes);
 
 app.use(notFoundMiddleware);
 app.use(errorMiddleware);
