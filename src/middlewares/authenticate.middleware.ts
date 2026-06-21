@@ -1,8 +1,12 @@
-import { Request, NextFunction } from "express";
+import { Request, Response, NextFunction } from "express";
 import { AppError } from "../utils/app-error";
 import { verifyAccessToken } from "../utils/jwt";
 
-export const authenticateMiddleware = (req: Request, next: NextFunction) => {
+export const authenticateMiddleware = (
+  req: Request,
+  _res: Response,
+  next: NextFunction,
+) => {
   const authHeader = req.header("Authorization");
 
   if (!authHeader) {
@@ -26,6 +30,12 @@ export const authenticateMiddleware = (req: Request, next: NextFunction) => {
       role: payload.role,
     };
   } catch (error) {
+    if (
+      error instanceof Error &&
+      error.message === "JWT_SECRET environment variable is required"
+    ) {
+      throw error;
+    }
     throw new AppError("Invalid or expired token", 401);
   }
 
