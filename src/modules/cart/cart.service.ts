@@ -5,7 +5,7 @@ import { cartRepository } from "./cart.repository";
 const getCart = async (userId: number) => {
   const cart = await cartRepository.getCartByUserId(userId);
 
-  if (!cart) {
+  if (!cart || cart.items.length === 0) {
     throw new AppError("Cart is Empty", 404);
   }
 

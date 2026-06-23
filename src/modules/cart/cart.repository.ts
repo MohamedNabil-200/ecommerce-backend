@@ -16,10 +16,10 @@ const getCartByUserId = (userId: number) => {
 };
 
 const createCart = (userId: number) => {
-  return prisma.cart.create({
-    data: {
-      userId,
-    },
+  return prisma.cart.upsert({
+    where: { userId },
+    create: { userId },
+    update: {},
   });
 };
 
