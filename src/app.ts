@@ -6,7 +6,8 @@ import productRoutes from "./modules/products/product.routes";
 import categoryRouter from "./modules/categories/category.routes";
 import authRoutes from "./modules/auth/auth.routes";
 import userRoutes from "./modules/users/user.routes";
-import wishlistRoutes from "./modules/wishlist/wishlist.routes"
+import wishlistRoutes from "./modules/wishlist/wishlist.routes";
+import cartRoutes from "./modules/cart/cart.routes";
 
 const app = express();
 
@@ -29,6 +30,9 @@ app.use("/api/users", userRoutes);
 
 // Wishlist
 app.use("/api/wishlist", wishlistRoutes);
+
+// Cart
+app.use("/api/cart", cartRoutes);
 
 app.use(notFoundMiddleware);
 app.use(errorMiddleware);
