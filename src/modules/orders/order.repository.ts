@@ -1,6 +1,7 @@
 import { prisma } from "../../lib/prisma";
 
-const createOrder = (userId: number, subtotal: number) => {
+const placeOrder = (userId: number, subtotal: number) => {
+
   return prisma.order.create({
     data: {
       userId,
@@ -53,7 +54,7 @@ const getOrderById = (orderId: number) => {
 };
 
 export const orderRepository = {
-  createOrder,
+  placeOrder,
   createOrderItems,
   getOrdersByUserId,
   getOrderById,

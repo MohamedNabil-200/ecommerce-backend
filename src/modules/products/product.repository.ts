@@ -22,6 +22,19 @@ const update = async (id: number, data: UpdateProductInput) => {
   });
 };
 
+const decrementStock = (productId: number, quantity: number) => {
+  return prisma.product.update({
+    where: {
+      id: productId,
+    },
+    data: {
+      stock: {
+        decrement: quantity,
+      },
+    },
+  });
+};
+
 const remove = async (id: number) => {
   return prisma.product.delete({
     where: { id },
@@ -33,5 +46,6 @@ export const productRepository = {
   getById,
   create,
   update,
+  decrementStock,
   remove,
 };
