@@ -25,7 +25,7 @@ const createOrderItems = (
 const getOrdersByUserId = (userId: number) => {
   return prisma.order.findMany({
     where: {
-      id: userId,
+      userId,
     },
     include: {
       items: {
