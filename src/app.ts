@@ -8,6 +8,7 @@ import authRoutes from "./modules/auth/auth.routes";
 import userRoutes from "./modules/users/user.routes";
 import wishlistRoutes from "./modules/wishlist/wishlist.routes";
 import cartRoutes from "./modules/cart/cart.routes";
+import orderRoutes from "./modules/orders/order.routes";
 
 const app = express();
 
@@ -33,6 +34,9 @@ app.use("/api/wishlist", wishlistRoutes);
 
 // Cart
 app.use("/api/cart", cartRoutes);
+
+// Orders
+app.use("/api/orders", orderRoutes);
 
 app.use(notFoundMiddleware);
 app.use(errorMiddleware);

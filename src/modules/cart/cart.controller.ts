@@ -1,7 +1,6 @@
 import { Request, Response } from "express";
 import { asyncHandler } from "../../utils/async-handler";
 import { cartService } from "./cart.service";
-import { success } from "zod";
 
 const getCart = asyncHandler(async (req: Request, res: Response) => {
   const userId = req.user!.id;
